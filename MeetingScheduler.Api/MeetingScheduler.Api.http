@@ -1,0 +1,21 @@
+@MeetingScheduler.Api_HostAddress = http://localhost:5002
+
+GET {{MeetingScheduler.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+POST {{MeetingScheduler.Api_HostAddress}}/users
+Accept: application/json
+
+{
+
+}
+
+###
+GET {{MeetingScheduler.Api_HostAddress}}/error-codes
+Accept: application/json
+
+
+###
+GET {{MeetingScheduler.Api_HostAddress}}/hello
+Accept: application/json

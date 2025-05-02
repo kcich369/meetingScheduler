@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MeetingScheduler.Domain\MeetingScheduler.Domain.csproj" />
+      <ProjectReference Include="..\MeetingScheduler.Shared.Cqrs\MeetingScheduler.Shared.Cqrs.csproj" />
+      <ProjectReference Include="..\MeetingScheduler.Shared.Domain\MeetingScheduler.Shared.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Marten" Version="7.40.0" />
+      <PackageReference Include="WolverineFx" Version="3.12.2" />
+        
+    </ItemGroup>
+
+</Project>
