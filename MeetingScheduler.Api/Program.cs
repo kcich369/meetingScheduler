@@ -41,7 +41,6 @@ builder.Host.UseWolverine(options =>
 });
 
 builder.Services.AddWolverineHttp();
-builder.Services.AddDistributedMemoryCache();
 
 var app = builder.Build();
 
