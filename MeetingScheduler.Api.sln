@@ -30,7 +30,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingScheduler.Endpoints"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingScheduler.Identity.Endpoints", "MeetingScheduler.Identity.Endpoints\MeetingScheduler.Identity.Endpoints.csproj", "{128E47CA-7426-4F6C-A1C2-7045C8201C1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingScheduler.Shared.Cqrs", "MeetingScheduler.Shared.Cqrs\MeetingScheduler.Shared.Cqrs.csproj", "{FCBBAD1B-960F-4113-B222-5EDD3315EB46}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingScheduler.Shared.Application", "MeetingScheduler.Shared.Application\MeetingScheduler.Shared.Application.csproj", "{FCBBAD1B-960F-4113-B222-5EDD3315EB46}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingScheduler.Shared.Endpoints", "MeetingScheduler.Shared.Endpoints\MeetingScheduler.Shared.Endpoints.csproj", "{2504236B-904B-4880-AFDC-2E537E7CD38C}"
 EndProject

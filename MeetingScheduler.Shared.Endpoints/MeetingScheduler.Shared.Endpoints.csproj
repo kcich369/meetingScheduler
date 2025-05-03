@@ -13,7 +13,7 @@
 
 
     <ItemGroup>
-      <ProjectReference Include="..\MeetingScheduler.Shared.Cqrs\MeetingScheduler.Shared.Cqrs.csproj" />
+      <ProjectReference Include="..\MeetingScheduler.Shared.Application\MeetingScheduler.Shared.Application.csproj" />
     </ItemGroup>
 
 </Project>

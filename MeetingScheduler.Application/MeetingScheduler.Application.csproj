@@ -8,7 +8,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\MeetingScheduler.Domain\MeetingScheduler.Domain.csproj" />
-      <ProjectReference Include="..\MeetingScheduler.Shared.Cqrs\MeetingScheduler.Shared.Cqrs.csproj" />
+      <ProjectReference Include="..\MeetingScheduler.Shared.Application\MeetingScheduler.Shared.Application.csproj" />
       <ProjectReference Include="..\MeetingScheduler.Shared.Domain\MeetingScheduler.Shared.Domain.csproj" />
     </ItemGroup>
 

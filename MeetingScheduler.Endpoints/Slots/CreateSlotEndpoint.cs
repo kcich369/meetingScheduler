@@ -7,11 +7,11 @@ using Wolverine.Http;
 
 namespace MeetingScheduler.Endpoints.Slots;
 
-public class CreateSlotEndpoint : CommandEndpoint<CreateSlotCommand, CreateSlotCommandResult>
+public class CreateSlotEndpoint : CommandEndpoint<CreateSlotsCommand, CreateSlotCommandResult>
 {
     [Transactional]
     [WolverinePost("slots")]
-    public override Task<IResult> Handle(CreateSlotCommand command, IMessageBus bus, CancellationToken ct)
+    public override Task<IResult> Handle(CreateSlotsCommand command, IMessageBus bus, CancellationToken ct)
     {
         return ExecuteCommand(command, bus, ct);
     }
