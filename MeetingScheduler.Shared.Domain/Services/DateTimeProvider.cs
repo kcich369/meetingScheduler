@@ -1,6 +1,6 @@
 namespace MeetingScheduler.Shared.Domain.Services;
 
-public class DateTimeProvider
+public class DateTimeProvider : IDateTimeProvider
 {
-    public DateTime GetCurrentDate() => DateTime.UtcNow;
+    public DateTime CurrentDate() => DateTime.UtcNow;
 }

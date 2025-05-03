@@ -1,4 +1,4 @@
-using MeetingScheduler.Application.Slots.GetSlots;
+using MeetingScheduler.Application.Slots.GetAvailable;
 using MeetingScheduler.Shared.Endpoints.Queries;
 using Microsoft.AspNetCore.Http;
 using Wolverine;

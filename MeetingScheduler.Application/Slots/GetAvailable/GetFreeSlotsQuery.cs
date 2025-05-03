@@ -1,17 +1,8 @@
-using MeetingScheduler.Shared.Application;
 using MeetingScheduler.Shared.Application.Commands;
 using MeetingScheduler.Shared.Application.Queries;
 
-namespace MeetingScheduler.Application.Slots.GetSlots;
+namespace MeetingScheduler.Application.Slots.GetAvailable;
+public record GetFreeSlotsQuery(DateOnly Date) : IQuery<GetFreeSlotsQueryResult>;
 
-public class GetFreeSlotsQuery : IQuery<GetFreeSlotsQueryResult>
-{
-}
-
-public class GetFreeSlotsQueryResult : IQueryResult, ICommandResult
-{
-    public Guid Id { get; set; }
-    public DateTime StartedAt { get; set; }
-    public DateTime EndedAt { get; set; }
-
-}
+public record GetFreeSlotsQueryResult(IEnumerable<GetFreeSlotsQueryElement> Slots) : IQueryResult;
+public record GetFreeSlotsQueryElement(Guid Id, DateTime StartedAt, DateTime EndedAt);

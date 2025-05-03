@@ -9,6 +9,7 @@ using Wolverine.Postgresql;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddOpenApi();
+
 var connectionString = builder.Configuration.GetConnectionString("MeetingScheduler")
                        ?? throw new Exception("Missing connection string");
 
@@ -40,6 +41,7 @@ builder.Host.UseWolverine(options =>
 });
 
 builder.Services.AddWolverineHttp();
+builder.Services.AddDistributedMemoryCache();
 
 var app = builder.Build();
 

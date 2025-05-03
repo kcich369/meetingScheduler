@@ -1,12 +1,14 @@
+using MeetingScheduler.Domain.Model.Base;
+
 namespace MeetingScheduler.Domain.IDs;
 
-public class ClientId
+public class ClientId : IEntityId
 {
-    private Guid Id { get; }
+    public Guid Value { get; }
 
-    private ClientId(Guid id)
+    private ClientId(Guid value)
     {
-        Id = id;
+        Value = value;
     }
 
     public static ClientId Create(Guid? id = null)

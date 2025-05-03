@@ -1,16 +1,18 @@
+using MeetingScheduler.Domain.Model.Base;
+
 namespace MeetingScheduler.Domain.IDs;
 
-public class SpecialistId
+public class SpecialistId : IEntityId
 {
-    private Guid Id { get; }
+    public Guid Value { get; }
 
-    private SpecialistId(Guid id)
+    private SpecialistId(Guid value)
     {
-        Id = id;
+        Value = value;
     }
 
     public static SpecialistId Create(Guid? id = null)
     {
         return new SpecialistId(id ?? Guid.NewGuid());
-    }  
+    }
 }

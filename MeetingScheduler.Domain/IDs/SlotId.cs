@@ -1,12 +1,14 @@
+using MeetingScheduler.Domain.Model.Base;
+
 namespace MeetingScheduler.Domain.IDs;
 
-public class SlotId
+public class SlotId : IEntityId
 {
-    private Guid Id { get; }
+    public Guid Value { get; }
 
-    private SlotId(Guid id)
+    private SlotId(Guid value)
     {
-        Id = id;
+        Value = value;
     }
 
     public static SlotId Create(Guid? id = null)
