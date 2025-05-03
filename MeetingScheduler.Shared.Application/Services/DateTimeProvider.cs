@@ -1,4 +1,6 @@
-namespace MeetingScheduler.Shared.Domain.Services;
+using MeetingScheduler.Shared.Domain.Services;
+
+namespace MeetingScheduler.Shared.Application.Services;
 
 public class DateTimeProvider : IDateTimeProvider
 {

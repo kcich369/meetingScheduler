@@ -12,6 +12,8 @@ public class CreateSlotsCommandHandler(IDateTimeProvider dateTimeProvider, IDocu
     public Task<IResult<CreateSlotCommandResult>> HandleAsync(CreateSlotsCommand command,
         CancellationToken cancellationToken)
     {
-        var newSlots = command.Slots.Select(x=>Slot.Create());
+        throw new NotImplementedException();
+        // var newSlots = command.Slots.Select(x=>Slot.Create());
+        // return Task.FromResult(SuccessResult<CreateSlotCommandResult>.Create(new CreateSlotCommandResult([],[])));
     }
 }
