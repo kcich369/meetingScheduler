@@ -1,5 +1,6 @@
 using Marten;
 using MeetingScheduler.Endpoints;
+using MeetingScheduler.Shared.Endpoints;
 using Oakton.Resources;
 using Wolverine;
 using Wolverine.Http;
@@ -23,6 +24,7 @@ builder.Services.AddMarten(options =>
     .IntegrateWithWolverine();
 
 builder.Services.AddResourceSetupOnStartup();
+builder.Services.RegisterEndpoints();
 
 builder.Host.UseWolverine(options =>
 {
@@ -37,7 +39,6 @@ builder.Host.UseWolverine(options =>
     options.LocalQueue("meeting-events")
         .Sequential()
         .UseDurableInbox();
-    
 });
 
 builder.Services.AddWolverineHttp();
