@@ -18,3 +18,4 @@ public class UserService(IHttpContextAccessor contextAccessor) : IUserService
         return UserData.Create(Guid.Parse( userId ?? Guid.Empty.ToString()), userName, userRole).Data;
     }
 }
+
